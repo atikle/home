@@ -61,7 +61,7 @@ div.icon {
     font-size: 30px;
     font-weight: 600;
     font-family: 'Ubuntu', sans-serif;
-    padding: 8px 11px;
+    /* padding: 8px 11px; */
     color: black;
     /* background-color: rgb(255, 85, 85); */
     background-color: transparent;
@@ -70,7 +70,7 @@ div.icon {
 div.name {
     width: 300px;
     position: fixed;
-    left: 45px;
+    left: 0;
     font-size: 40px;
     font-weight: 900;
     font-family: 'Ubuntu', sans-serif;
