@@ -55,11 +55,23 @@ header {
     background-color: white;
 }
 
+div.icon {
+    position: fixed;
+    left: 0;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 8px 11px;
+    color: black;
+    /* background-color: rgb(255, 85, 85); */
+    background-color: transparent;
+}
+
 div.name {
     width: 300px;
     position: fixed;
-    left: 0;
-    font-size: 35px;
+    left: 45px;
+    font-size: 40px;
     font-weight: 900;
     font-family: 'Ubuntu', sans-serif;
     padding: 10px 20px;
@@ -67,17 +79,6 @@ div.name {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-div.mail {
-    position: fixed;
-    right: 0;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 12.5px 11px;
-    color: black;
-    background-color: #ee696b;
 }
 
 h1 {
