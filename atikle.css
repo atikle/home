@@ -39,6 +39,7 @@ html {
     background-attachment: fixed;
     background-color: whitesmoke;
     color: black;
+    font-family: "Roboto", sans-serif;
     border: 0;
     top: 0;
 }
@@ -48,37 +49,99 @@ html {
     cursor: pointer;
 }
 
-header {
-    width: 100%;
+.navigation-header {
     position: fixed;
-    height: 66px;
     background-color: white;
+    padding: 0px 10px;
+    height: 66px;
+    width: 100%;
+    top: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 
-div.icon {
-    position: fixed;
-    left: 0;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: 'Ubuntu', sans-serif;
-    /* padding: 8px 11px; */
-    color: black;
-    /* background-color: rgb(255, 85, 85); */
-    background-color: transparent;
+nav {
+    width: 95%;
+    border-radius: 10px;
+    /* max-width: 1650px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white ;
 }
+
+/* .logo-container>a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+} */
 
 div.name {
     width: 300px;
-    position: fixed;
     left: 0;
     font-size: 40px;
-    font-weight: 900;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 10px 20px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    padding-left: 10px;
     background: linear-gradient(90.1deg, rgb(255, 85, 85) 0.1%, rgb(85, 85, 255) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.navigation-items {
+    display: flex;
+    gap: 70px;
+}
+
+.navigation-items>a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    transition: .15s ease-in-out;
+}
+
+.navigation-items>a:hover {
+    color: silver;
+    font-weight: 600;
+    /* padding: 0px 20px; */
+}
+
+.hamburger {
+    display: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+}
+
+@media screen and (max-width:768px) {
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .hamburger #closeHam {
+        display: none;
+    }
+
+    .navigation-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 58px;
+        background-color: rgb(73, 51, 153);
+        width: 100%;
+        height: calc(100vh - 58px);
+        padding-top: 60px;
+        gap: 10vh;
+    }
 }
 
 h1 {
@@ -94,23 +157,29 @@ h3 {
 }
 
 .div-1 {
+    margin-top: 66px;
     font-size: 5vh;
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
-    padding: 25vh 10px;
+    padding: 40vh 10px;
     text-align: center;
-
     color: black;
     background-color: #98d9e1;
     background-image: linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
 }
 
+.div-2 {
+    width: 80%;
+    margin-top: 66px;
+    font-size: 4vh;
+    font-weight: 700;
+    padding: 25vh 10px;
+    color: black;
+}
+
 .container-1 {
     color: black;
     background-color: whitesmoke;
-    /* background-image: url(https://kyle-inc.github.io/resource/background/background-1.webp);
-    background-size: cover;
-    background-repeat: no-repeat; */
     padding-top: 33vh;
     padding-bottom: 33vh;
 }
@@ -183,9 +252,11 @@ footer {
 .gmail:hover {
     background-color: white;
 }
+
 .linkedin:hover {
     background-color: #0077B5;
 }
+
 .twitter:hover {
     background-color: #1DA1F2;
 }

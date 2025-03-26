@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
 
+
+    <!-- Roboto @ Google Fonts -->
+    <!-- font-family: "Roboto", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <!-- Poppins @ Google Fonts -->
     <!-- font-family: 'Poppins', sans-serif; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    
+
 
     <!-- CSS For fade-in-out effect -->
     <link rel="stylesheet" href="https://kyle-inc.github.io/resource/effect-fade-in-out/fade-in-out.css">
@@ -43,7 +51,8 @@
 <body>
 
     <div id="fadein"></div>
-    <script src="https://kyle-inc.github.io/resource/effect-fade-in-out/fade-in-out.js" crossorigin="anonymous"></script>
+    <script src="https://kyle-inc.github.io/resource/effect-fade-in-out/fade-in-out.js"
+        crossorigin="anonymous"></script>
     <script type="text/javascript">
         window.onload = function () {
             setTimeout(function () {
@@ -52,12 +61,46 @@
         };
     </script>
 
-    <header>
-        <div class="name">atikle.</div>
+    <header class="navigation-header">
+
+        <nav>
+
+            <div class="name">atikle.</div>
+
+            <div class="navigation-items" id="navigation-items">
+                <a class="links" href="daily">atikle Daily</a>
+            </div>
+
+            <div class="hamburger">
+                <span id="openHam">&#9776;</span>
+                <span id="closeHam">&#x2716;</span>
+            </div>
+
+        </nav>
+
+        <script>
+            let openHam = document.querySelector('#openHam');
+            let closeHam = document.querySelector('#closeHam');
+            let navigationItems = document.querySelector('#navigation-items');
+    
+            const hamburgerEvent = (navigation, close, open) => {
+                navigationItems.style.display = navigation;
+                closeHam.style.display = close;
+                openHam.style.display = open;
+            };
+    
+            openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
+            closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+        </script>
+
     </header>
 
     <div class="div-1">
-        atikle, the definitive newsletter.
+        atikle, Gain the insights.
+    </div>
+
+    <div class="div-2">
+        atikle provides a curated daily briefing, offering a balanced perspective on the day's most significant events. No fluff, just the essentials without the political rhetoric.
     </div>
 
     <div class="floating-footer"></div>
