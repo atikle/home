@@ -5,14 +5,14 @@ html {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: whitesmoke;
+    background-color: #e9ecef;
     color: black;
     font-family: 'Poppins', sans-serif;
     border: 0;
     top: 0;
 }
 
-.a {
+a {
     text-decoration: none;
     cursor: pointer;
 }
@@ -21,6 +21,8 @@ html {
     color: silver;
     background: transparent;
 }
+
+
 
 
 
@@ -47,6 +49,8 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: silver;
 }
+
+
 
 
 
@@ -140,9 +144,15 @@ div.name {
 
 
 
+
+
 .atikle{
     font-family: "Roboto", sans-serif;
 }
+
+
+
+
 
 .div-1 {
     margin-top: 66px;
@@ -160,9 +170,45 @@ div.name {
     width: 80%;
     font-size: 30px;
     font-weight: 700;
-    padding: 220px 10px;
+    padding: 220px 4vw;
     color: black;
 }
+
+.profile {
+    width: 92%;
+    margin: auto;
+    border-radius: 40px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-1 {
+    min-width: 350px;
+    padding: 5% 5%
+}
+
+img.profile-picture {
+    width: 100%;
+    min-width: 300px;
+    max-width: 480px;
+    border-radius: 1000px;
+}
+
+.container-2 {
+    min-width: 350px;
+    padding: 5% 5%
+}
+
+.profile-heading {
+    color: white;
+    font-size: 40px;
+    padding-top: 10%;
+}
+
+
+
+
 
 footer {
     background-color: black;
