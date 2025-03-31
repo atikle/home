@@ -184,20 +184,16 @@ div.name {
 }
 
 .container-1 {
-    min-width: 350px;
-    padding: 5% 5%
+    padding: 10% 10%;
 }
 
 img.profile-picture {
-    width: 100%;
-    min-width: 200px;
-    max-width: 400px;
-    border-radius: 1000px;
+    width: 300px;
+    border-radius: 150px;
 }
 
 .container-2 {
-    min-width: 350px;
-    padding: 5% 5%
+    padding: 5% 5%;
 }
 
 .profile-heading {
