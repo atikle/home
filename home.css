@@ -190,7 +190,7 @@ div.name {
 
 img.profile-picture {
     width: 100%;
-    min-width: 300px;
+    min-width: 250px;
     max-width: 480px;
     border-radius: 1000px;
 }
