@@ -36,6 +36,18 @@
 
 
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CK745SP72W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CK745SP72W');
+    </script>
+
+
+
     <title>atikle.</title>
     <link rel="icon" href="https://atikle.github.io/resource/icon.png" type="image/x-icon">
 
@@ -57,8 +69,12 @@
             <div class="name"><a href="index.html">atikle.</a></div>
 
             <div class="navigation-items" id="navigation-items">
-                <a class="links" href="https://atikle.github.io/daily"><font class="atikle">atikle. Daily</font></a>
-                <a class="links" href="https://atikle.github.io/insights"><font class="atikle">Insights</font></a>
+                <a class="links" href="https://atikle.github.io/daily">
+                    <font class="atikle">atikle. Daily</font>
+                </a>
+                <a class="links" href="https://atikle.github.io/insights">
+                    <font class="atikle">Insights</font>
+                </a>
             </div>
 
             <div class="hamburger">
@@ -72,13 +88,13 @@
             let openHam = document.querySelector('#openHam');
             let closeHam = document.querySelector('#closeHam');
             let navigationItems = document.querySelector('#navigation-items');
-    
+
             const hamburgerEvent = (navigation, close, open) => {
                 navigationItems.style.display = navigation;
                 closeHam.style.display = close;
                 openHam.style.display = open;
             };
-    
+
             openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
             closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
         </script>
@@ -90,7 +106,8 @@
     </div>
 
     <div class="div-2">
-        <font class="atikle">atikle</font> provides a curated daily briefing, offering a balanced perspective on the day's most significant events. No fluff, just the essentials without the political rhetoric.
+        <font class="atikle">atikle</font> provides a curated daily briefing, offering a balanced perspective on the
+        day's most significant events. No fluff, just the essentials without the political rhetoric.
     </div>
 
     <footer>
