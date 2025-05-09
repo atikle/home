@@ -174,11 +174,11 @@ div.name {
 }
 
 .typing-demo {
-  width: 330px;
+  width: 340px;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid white;
+  border-right: 2px solid white;
 }
 
 @keyframes typing {
