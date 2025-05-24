@@ -40,10 +40,35 @@
     <link rel="icon" href="https://atikle.github.io/resource/icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://atikle.github.io/resource/footer-1-multicolor/footer.css">
 
     <style>
+        .profile {
+            width: 92%;
+            margin: auto;
+            border-radius: 40px;
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+        }
 
+        .container-1 {
+            padding: 10% 4.5%;
+        }
+
+        img.profile-picture {
+            width: 300px;
+            border-radius: 150px;
+        }
+
+        .container-2 {
+            padding: 5% 5%;
+        }
+
+        .profile-heading {
+            color: white;
+            font-size: 40px;
+            padding-top: 10%;
+        }
     </style>
 
 </head>
@@ -57,8 +82,12 @@
             <div class="name"><a href="index.html">atikle.</a></div>
 
             <div class="navigation-items" id="navigation-items">
-                <a class="links" href="https://atikle.github.io/daily"><font class="atikle">atikle. Daily</font></a>
-                <a class="links" href="https://atikle.github.io/insights"><font class="atikle">Insights</font></a>
+                <a class="links" href="https://atikle.github.io/daily">
+                    <font class="atikle">atikle. Daily</font>
+                </a>
+                <a class="links" href="https://atikle.github.io/insights">
+                    <font class="atikle">Insights</font>
+                </a>
             </div>
 
             <div class="hamburger">
@@ -72,13 +101,13 @@
             let openHam = document.querySelector('#openHam');
             let closeHam = document.querySelector('#closeHam');
             let navigationItems = document.querySelector('#navigation-items');
-    
+
             const hamburgerEvent = (navigation, close, open) => {
                 navigationItems.style.display = navigation;
                 closeHam.style.display = close;
                 openHam.style.display = open;
             };
-    
+
             openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
             closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
         </script>
@@ -101,16 +130,6 @@
             </div>
         </div>
     </div>
-
-    <footer>
-
-        <div class="footer-container-1">
-            <img src="https://atikle.github.io/resource/icon.png" style="width: 60px;" alt="">
-            <br>
-            <font class="atikle" style="font-size: 25px; font-weight: 600;">atikle.</font>
-        </div>
-
-    </footer>
 
 </body>
 

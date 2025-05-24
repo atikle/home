@@ -26,34 +26,6 @@ a {
 
 
 
-/* ------------------- Scroll Bar ------------------- */
-/* width */
-::-webkit-scrollbar {
-    width: 0.75vw;
-    background-color: white;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    /* border-radius: 10px; */
-    background-color: white;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: grey;
-    /* border-radius: 35px; */
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: silver;
-}
-
-
-
-
-
 .navigation-header {
     position: fixed;
     background-color: white;
@@ -202,32 +174,4 @@ div.name {
     font-weight: 700;
     padding: 220px 4vw;
     color: black;
-}
-
-.profile {
-    width: 92%;
-    margin: auto;
-    border-radius: 40px;
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container-1 {
-    padding: 10% 4.5%;
-}
-
-img.profile-picture {
-    width: 300px;
-    border-radius: 150px;
-}
-
-.container-2 {
-    padding: 5% 5%;
-}
-
-.profile-heading {
-    color: white;
-    font-size: 40px;
-    padding-top: 10%;
 }
