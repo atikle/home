@@ -122,6 +122,15 @@ div.name {
     font-family: "Roboto", sans-serif;
 }
 
+.synapse {
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(135deg, #FF2D92, #FF8C00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 
 
 
@@ -140,29 +149,29 @@ div.name {
 
 
 .typewriter {
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
 }
 
 .typing-demo {
-  width: 340px;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid white;
+    width: 340px;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
 }
 
 @keyframes typing {
-  from {
-    width: 0
-  }
+    from {
+        width: 0
+    }
 }
-    
+
 @keyframes blink {
-  50% {
-    border-color: transparent
-  }
+    50% {
+        border-color: transparent
+    }
 }
 
 
