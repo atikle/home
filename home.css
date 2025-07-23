@@ -17,11 +17,6 @@ a {
     cursor: pointer;
 }
 
-::selection {
-    color: silver;
-    background: transparent;
-}
-
 
 
 .div-1 {
