@@ -23,11 +23,6 @@ a {
 }
 
 
-.fixed-width-container {
-    width: 100%;
-    max-width: 1650px;
-    margin: auto;
-}
 
 .div-1 {
     margin-top: 66px;
@@ -39,8 +34,6 @@ a {
     background-color: #98d9e1;
     background-image: linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
 }
-
-
 
 .typewriter {
     /*This part is important for centering*/
