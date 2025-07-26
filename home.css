@@ -5,7 +5,7 @@ html {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: var(--body-background-1);
+    background-color: var(--body-background-1);
     color: var(--text-color-2);
     font-family: 'Poppins', sans-serif;
     border: 0;
@@ -64,5 +64,6 @@ a {
     margin: auto;
     font-size: 30px;
     font-weight: 700;
-    padding: 220px 15px;color: var(--text-color-2);
+    padding: 220px 15px;
+    color: var(--text-color-2);
 }
