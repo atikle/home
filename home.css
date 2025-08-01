@@ -63,6 +63,6 @@ a {
     font-size: 30px;
     font-weight: 700;
     padding: 220px 15px;
-    background-color: var(--body-background-1x);
+    background-color: var(--body-background-1);
     color: var(--text-primary);
 }
