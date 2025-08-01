@@ -3,6 +3,7 @@ body {
     height: 100%;
     margin: 0;
     top: 0;
+    border: 0;
     color: var(--text-primary);
     background-color: var(--body-background-1);
     background-repeat: no-repeat;
@@ -22,7 +23,7 @@ a {
     font-size: 40px;
     font-weight: 700;
     /* padding: 350px 10px; */
-    height: 100vh;
+    height: 95vh;
     align-content: center;
     padding: 0px 10px;
     text-align: center;
@@ -42,7 +43,7 @@ a {
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid white;
+    border-right: 2px solid var(--body-background-1);
 }
 
 @keyframes typing {
