@@ -6,7 +6,7 @@ html {
     border: 0;
     top: 0;
     color: var(--text-primary);
-    background-color: var(--body-background-2);
+    background-color: var(--body-background-1);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
@@ -59,9 +59,7 @@ a {
 
 
 .div-2 {
-    /* margin-top: 66px; */
-    width: auto;
-    margin: auto;
+    text-align: start;
     font-size: 30px;
     font-weight: 700;
     padding: 220px 15px;
