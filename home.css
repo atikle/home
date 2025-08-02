@@ -4,8 +4,8 @@ body {
     margin: 0;
     top: 0;
     border: 0;
-    color: var(--text-primary);
-    background-color: var(--body-background-1);
+    color: var(--text-color-1);
+    background-color: var(--background-1);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
@@ -27,7 +27,7 @@ a {
     align-content: center;
     padding: 0px 10px;
     text-align: center;
-    color: var(--text-primary);
+    color: var(--text-1);
     background-color: #98d9e1;
     background-image: linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
 }
@@ -43,7 +43,7 @@ a {
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid var(--body-background-1);
+    border-right: 2px solid var(--background-1);
 }
 
 @keyframes typing {
@@ -66,6 +66,6 @@ a {
     padding: 0px 15px;
     font-size: 30px;
     font-weight: 700;
-    background-color: var(--body-background-1);
-    color: var(--text-primary);
+    background-color: var(--background-1);
+    color: var(--text-color-1);
 }
